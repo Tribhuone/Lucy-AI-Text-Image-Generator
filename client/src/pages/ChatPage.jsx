@@ -25,7 +25,7 @@ const ChatAI = () => {
         setInput("");
 
         try {
-            const response = await axios.post(`http://localhost:8080/api/chat`, {
+            const response = await axios.post(`https://lucy-ai-y8d4.onrender.com/api/chat`, {
                 prompt: input,
             });
 
