@@ -1,0 +1,61 @@
+
+@import "tailwindcss";
+
+*{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.nav-bar-section{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: #00000024;
+    color: #ffffff;
+}
+
+@keyframes bounce-right {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+.talk-btn:hover .arrow {
+    animation: bounce-right 1s infinite;
+}
+
+/* Extra anime */
+@keyframes bounce-Up {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@media screen and (max-width: 480px){
+    .talk-btn{
+        animation: bounce-Up 1s infinite;
+    }
+
+    .arrow{
+        animation: bounce-Up 1s infinite;
+    }
+}
+
+.placeholder-col{
+  color: #e0e0e0;
+  font-weight: 300;
+}
+
+.lucy-logo-2nd{
+  clip-path: polygon(26% 13%, 72% 8%, 94% 84%, 68% 84%, 85% 100%, 49% 88%, 2% 84%);
+}
+
+.lucy-logo-3rd{
+  clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 6% 50%);
+}
