@@ -23,7 +23,6 @@ app.use(express.json());
 // ___ Routes ...
 
 app.use("/api", appRouter );
-app.get('/health', (req, res) => res.send('OK'));
 
 
 //  server function ...
