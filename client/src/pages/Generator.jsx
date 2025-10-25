@@ -24,7 +24,7 @@ const Generator = () => {
         setImg("");        // reset previous image
 
         try {
-            const response = await axios.post(`http://ailucy.ap-south-1.elasticbeanstalk.com/api/generate`, {
+            const response = await axios.post(`https://lucy-ai-y8d4.onrender.com/api/generate`, {
                 prompt: input,
             });
 
